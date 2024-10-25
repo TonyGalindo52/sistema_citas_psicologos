@@ -1,0 +1,250 @@
+
+.carousel-item img {
+    max-width: 100%;
+    height: 87%;
+}  
+
+
+/* .imagen1 img {
+    max-width: 100%;
+    height: 87%;
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.section-padding{
+    padding: 40px 0;
+}
+
+.carousel-item {
+    height: 80vh;  /*80% */
+    min-height: 300px;
+} 
+
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; /*100px*/
+    top: 0;
+    left: 0;
+    /* background: rgba(0,30,82,0.327); */
+    z-index: 1;
+}
+
+.navbar-nav a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-dark .navbar-brand{
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: #fff;
+}
+
+.w-100{
+    height: 100vh;
+}
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background-color: #fff;
+   
+}
+/* .date .card {} */
+/* .articulos .card-body i {
+    font-size: 50px;
+} */
+/* .team .card-body i{
+    font-size: 20px;
+} */
+
+.about-text {
+    text-align: justify;
+}
+.psicologos-text {
+    text-align: justify;
+}
+.contacto-text{
+    text-align: justify;
+}
+.servicios-text{
+    text-align: justify;
+}
+.citas-text{
+    text-align: justify;
+}
+
+/* imagenes */
+
+.fechas-img {
+    margin-top: 85px;
+}
+
+
+#Tabla-fechas th.bg-custom{
+    background-color: #002849; 
+    color: #fff; 
+}
+#Tabla-comite th.bg-custom {
+    background-color: #002849; 
+    color: #fff;
+}
+.container-img-logos {
+    max-width: 100%;
+    overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+}
+.img-logo{
+    width: 6%;
+    height: auto; 
+    /* padding: 0px 5px 0 5px; */
+    margin: 5px;
+   padding: 3px;
+}
+.img-fasbit {
+    width: 12%;
+    height: auto;    
+}
+
+.img-guanajuato{
+    width: 8%;
+    height: auto; 
+}
+.img-UTM {
+    width: 8%;
+    height: auto; 
+}
+
+.bg-customNav {
+    background-color: #002849; /* Cambia #ff5733 por el color que desees */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Letras blancas */
+}
+
+.carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+} 
+
+@media(max-width: 767px) {
+    
+    .carousel-item img {
+        max-height: 300px; 
+    }
+  
+    .container-img-logos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .img-logo{
+        width: 6%;
+        height: auto; 
+        /* padding: 0px 5px 0 5px; */
+        margin: 5px;
+       padding: 3px;
+    }
+    .img-fasbit {
+        width: 12%;
+        height: auto;    
+    }
+    
+    .img-guanajuato{
+        width: 8%;
+        height: auto; 
+    }
+    .img-UTM {
+        width: 12%;
+        height: auto; 
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-item {
+        height: 70vh;
+    }
+    .w-100{
+     height: 70vh;
+    }
+    .about-text {
+        padding: top 50px;
+        text-align: justify;
+    }
+    .psicologos-text {
+        padding: top 50px;
+        text-align: justify;
+    }
+    .contacto-text{
+        padding: top 50px;
+        text-align: justify;
+    }
+    .articulo-text{
+        padding: top 50px;
+        text-align: justify;
+    }
+    .citas-text{
+        padding: top 50px;
+        text-align: justify;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .section-padding{
+        padding: 50px 0;
+    }
+    .about-img{
+        width: 70%;
+        height: auto; 
+        padding: 1px;
+        padding-bottom: 15px;
+        display: block; /* Asegúrate de que la imagen sea un elemento de bloque */
+        margin: 0 auto; 
+    }
+    .carrusel div{
+        height: 290px;
+    }
+
+    .carousel-caption {
+        bottom: -50px; /* Ajusta según necesites */
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    .carousel-caption p{
+        width: 80%;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+}
