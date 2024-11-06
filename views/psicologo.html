@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Psicólogos</title>
+</head>
+<body>
+    <h1>Lista de Psicólogos</h1>
+    <select id="psicologoSelect">
+        <option value="">Selecciona un psicólogo</option>
+    </select>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            try {
+                // Solicitud para obtener los psicólogos
+                const response = await fetch("http://localhost:8001/psicologo/lista");
+                const psicologos = await response.json();
+
+                // Verifica si los datos fueron recibidos correctamente
+                console.log("Datos de psicólogos:", psicologos);
+
+                // Obtener el select y llenar opciones
+                const selectPsicologo = document.getElementById("psicologoSelect");
+                psicologos.forEach(psicologo => {
+                    const option = document.createElement("option");
+                    option.value = psicologo.Id_psicologo;
+                    option.textContent = `${psicologo.Nombre} ${psicologo.Apellido_p} ${psicologo.Apellido_m}`;
+                    selectPsicologo.appendChild(option);
+                });
+            } catch (error) {
+                console.error("Error al cargar psicólogos:", error);
+            }
+        });
+    </script>
+</body>
+</html>

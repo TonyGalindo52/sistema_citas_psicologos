@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjuan Psicología</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tu CSS personalizado -->
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+<!-- Navbar con logo y título -->
+<nav class="navbar navbar-expand-lg bg-customNav sticky-top">
+    <div class="container-fluid">
+        <!-- Logo y título -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-white">
+            <img src="img/logo.jpg" alt="Logo de Sanjuan Psicología" class="logo">
+            <span class="ms-2" style="font-size: 1.5rem;">Sanjuan Psicología</span>
+        </a>
+        
+        <!-- Botón para menú colapsable en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Enlaces de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-white">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="public/index.html" class="nav-link text-white">INFORMACIÓN GENERAL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="catalogo.html" class="nav-link text-white">PSICÓLOGOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servicios.html" class="nav-link text-white">TARIFAS Y SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="agendar_cita.html" class="nav-link text-white">AGENDAR CITA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link text-white">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido adicional aquí -->
+<main>
+    <div class="container my-4">
+        <!-- Filtro de Ubicación -->
+        <div class="filter-section mb-4">
+            <label for="ubicacion-filter" class="mr-2 font-weight-bold">Filtrar por ubicación:</label>
+            <select id="ubicacion-filter" class="form-control d-inline-block w-auto" onchange="filtrarPorUbicacion()">
+                <option value="">Seleccione una ubicación</option>
+                <option value="En Línea">En Línea</option>
+                <option value="Tlaxiaco">Tlaxiaco</option>
+                <option value="Oaxaca">Oaxaca</option>
+            </select>
+        </div>
+        
+        <!-- Contenedor de Tarjetas -->
+        <div id="catalogo-container" class="row">
+            <!-- Las tarjetas de psicólogos se insertarán aquí desde catalogo.js -->
+        </div>
+    </div>
+</main>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="catalogo.js"></script>
+
+</body>
+</html>
