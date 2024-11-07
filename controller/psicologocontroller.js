@@ -95,7 +95,7 @@ const deletePsicologo = async (req, resp = response) => {
     }
 }
 
-const getPsicologoVista = async (req, resp = response) => {
+const getCatalogoVista = async (req, resp = response) => {
     try {
         const psicologos = await PsicologoModel.sequelize.query(
             `SELECT 
@@ -142,5 +142,5 @@ module.exports = {
     postPsicologo,
     putPsicologo,
     deletePsicologo,
-    getPsicologoVista
+    getCatalogoVista
 };
