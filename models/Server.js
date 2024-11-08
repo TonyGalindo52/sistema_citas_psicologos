@@ -17,6 +17,7 @@ class Server {
         this.app.use('/paciente', require('../routes/pacientes'));
         this.app.use('/ubicacion', require('../routes/ubicacion')); 
         this.app.use('/especialidad', require('../routes/especialidades'));// Nueva ruta para ubicaciones
+        this.app.use('/servicio', require('../routes/servicios'));
     }
 
     async dbConnection() {
